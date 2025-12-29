@@ -605,3 +605,5 @@ function PlaceCard({ place, isSelected, onClick }: PlaceCardProps) {
     </motion.div>
   );
 }
+
+// TripMap exported above as a named component

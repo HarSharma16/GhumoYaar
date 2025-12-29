@@ -15,9 +15,8 @@ import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
 import { cn } from "@/lib/utils";
+
 
 interface ExportShareButtonsProps {
   tripId: string;
@@ -63,6 +62,10 @@ export function ExportShareButtons({
 
       // Wait for accordions to expand
       await new Promise((resolve) => setTimeout(resolve, 500));
+      const [{ default: html2canvas }, { default: jsPDF }] = await Promise.all([
+        import('html2canvas'),
+        import('jspdf')
+      ]);
 
       const canvas = await html2canvas(element, {
         scale: 2,
