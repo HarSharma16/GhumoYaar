@@ -37,7 +37,7 @@ This repository contains the frontend (Vite + React + TypeScript + Tailwind) and
 
 ---
 
-## Repo Structure (high level)
+## Repo Structure 
 
 .
 ├── src/                    # Application source code
@@ -100,15 +100,6 @@ OPENAI_API_KEY=your_openai_key
 NODE_ENV=development
 ```
 
-Notes:
-- Prefix frontend-exposed variables with `VITE_` so Vite injects them safely into the client bundle.
-- Keep server-only secrets (service role keys) out of the client and use serverless functions or a backend to call privileged APIs.
-
----
-
-## Deployment
-
-Common targets: Vercel, Netlify, or your own Node server. Ensure environment variables are configured in your hosting provider and that any serverless functions (Supabase) are deployed to the correct environment.
 
 ---
 
@@ -121,12 +112,8 @@ Common targets: Vercel, Netlify, or your own Node server. Ensure environment var
 
 ## Adding Showcase Images
 
-To include sample screenshots in this README or demo pages, create a `public/screenshots/` (or `docs/images/`) folder and add image files. Example markdown to add below in this README:
-
-### Sample Screenshots
-
 ![Homepage screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065500.png?raw=true)
-![Itinerary screenshot](public/screenshots/itinerary-1.png)
+![Itinerary screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065530.png?raw=true)
 
 
 
