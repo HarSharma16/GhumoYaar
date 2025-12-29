@@ -125,7 +125,7 @@ To include sample screenshots in this README or demo pages, create a `public/scr
 
 ### Sample Screenshots
 
-![Homepage screenshot](public/screenshots/homepage-1.pn)
+![Homepage screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065500.png?raw=true)
 ![Itinerary screenshot](public/screenshots/itinerary-1.png)
 
 
