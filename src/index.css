@@ -1,0 +1,242 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@fontsource/playfair-display/400.css';
+@import '@fontsource/playfair-display/500.css';
+@import '@fontsource/playfair-display/600.css';
+@import '@fontsource/playfair-display/700.css';
+@import '@fontsource/dm-sans/400.css';
+@import '@fontsource/dm-sans/500.css';
+@import '@fontsource/dm-sans/600.css';
+@import '@fontsource/dm-sans/700.css';
+
+@layer base {
+  :root {
+    --background: 35 30% 98%;
+    --foreground: 25 30% 12%;
+
+    --card: 35 25% 96%;
+    --card-foreground: 25 30% 12%;
+
+    --popover: 35 25% 96%;
+    --popover-foreground: 25 30% 12%;
+
+    --primary: 28 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 50% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 35 20% 92%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 28 85% 92%;
+    --accent-foreground: 28 90% 35%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 88%;
+    --input: 35 20% 88%;
+    --ring: 28 90% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors */
+    --saffron: 28 90% 55%;
+    --saffron-light: 28 85% 70%;
+    --saffron-dark: 28 90% 40%;
+    --teal: 175 50% 35%;
+    --teal-light: 175 45% 50%;
+    --teal-dark: 175 55% 25%;
+    --gold: 45 90% 55%;
+    --warm-white: 35 30% 98%;
+    --warm-cream: 35 25% 94%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(28, 90%, 55%) 0%, hsl(35, 95%, 60%) 50%, hsl(45, 90%, 55%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(28, 90%, 55%) 0%, hsl(350, 70%, 50%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(28 90% 55% / 0.15);
+    --shadow-glow: 0 0 40px hsl(28 90% 55% / 0.3);
+    --shadow-card: 0 8px 32px -8px hsl(25 30% 12% / 0.1);
+
+    --sidebar-background: 35 25% 96%;
+    --sidebar-foreground: 25 30% 12%;
+    --sidebar-primary: 28 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 20% 92%;
+    --sidebar-accent-foreground: 25 30% 12%;
+    --sidebar-border: 35 20% 88%;
+    --sidebar-ring: 28 90% 55%;
+  }
+
+  .dark {
+    --background: 25 25% 8%;
+    --foreground: 35 25% 95%;
+
+    --card: 25 20% 12%;
+    --card-foreground: 35 25% 95%;
+
+    --popover: 25 20% 12%;
+    --popover-foreground: 35 25% 95%;
+
+    --primary: 28 90% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 175 50% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 15% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 28 50% 20%;
+    --accent-foreground: 28 85% 70%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 15% 18%;
+    --input: 25 15% 18%;
+    --ring: 28 90% 55%;
+
+    --saffron: 28 90% 55%;
+    --saffron-light: 28 85% 65%;
+    --saffron-dark: 28 90% 45%;
+    --teal: 175 50% 45%;
+    --teal-light: 175 45% 55%;
+    --teal-dark: 175 55% 35%;
+    --gold: 45 90% 55%;
+    --warm-white: 35 25% 95%;
+    --warm-cream: 25 20% 15%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(28, 90%, 50%) 0%, hsl(35, 90%, 55%) 50%, hsl(45, 85%, 50%) 100%);
+    --gradient-sunset: linear-gradient(180deg, hsl(28, 85%, 50%) 0%, hsl(350, 65%, 45%) 100%);
+    --gradient-glass: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+    --shadow-soft: 0 4px 20px -4px hsl(28 90% 55% / 0.25);
+    --shadow-glow: 0 0 60px hsl(28 90% 55% / 0.4);
+    --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.4);
+
+    --sidebar-background: 25 20% 10%;
+    --sidebar-foreground: 35 25% 95%;
+    --sidebar-primary: 28 90% 55%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 25 15% 15%;
+    --sidebar-accent-foreground: 35 25% 95%;
+    --sidebar-border: 25 15% 18%;
+    --sidebar-ring: 28 90% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .text-gradient {
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+
+  .bg-gradient-soft {
+    background: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted) / 0.3) 100%);
+  }
+
+  .glass {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid hsl(var(--border) / 0.5);
+  }
+
+  .glass-dark {
+    background: hsl(var(--card) / 0.6);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid hsl(var(--border) / 0.3);
+  }
+
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  /* Smooth transitions for theme switching */
+  .theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+
+  /* Loading skeleton animation */
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      hsl(var(--muted)) 0%,
+      hsl(var(--muted) / 0.5) 50%,
+      hsl(var(--muted)) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Focus ring styles */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background;
+  }
+
+  /* Mobile touch optimizations */
+  @media (hover: none) and (pointer: coarse) {
+    .touch-target {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
+}
