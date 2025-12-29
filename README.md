@@ -39,11 +39,19 @@ This repository contains the frontend (Vite + React + TypeScript + Tailwind) and
 
 ## Repo Structure (high level)
 
-- `src/` — application source code (components, pages, hooks, integrations)
-- `src/components` — UI components and sections (Hero, Navbar, etc.)
-- `supabase/` — Supabase config, functions, and migrations
-- `public/` — static assets served at root
-- `package.json`, `vite.config.ts`, `tailwind.config.ts` — project tooling
+.
+├── src/                    # Application source code
+│   ├── components/         # UI components & sections
+│   ├── hooks/              # Custom hooks
+│   ├── integrations/       # API & service integrations
+│   └── pages/              # Page-level components
+├── supabase/               # Supabase config, functions, migrations
+├── public/                 # Static assets
+├── package.json
+├── vite.config.ts
+├── tailwind.config.ts
+└── README.md
+
 
 ---
 
@@ -117,12 +125,9 @@ To include sample screenshots in this README or demo pages, create a `public/scr
 
 ### Sample Screenshots
 
-![Homepage screenshot](public/screenshots/homepage-1.png)
+![Homepage screenshot](public/screenshots/homepage-1.pn)
 ![Itinerary screenshot](public/screenshots/itinerary-1.png)
 
-Replace the file names with your screenshots. If you prefer images in the repo under `src/assets/readme/`, use:
-
-![Homepage screenshot](src/assets/readme/homepage-1.png)
 
 
 
