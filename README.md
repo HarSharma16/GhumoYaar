@@ -32,8 +32,7 @@ This repository contains the frontend (Vite + React + TypeScript + Tailwind) and
 - Backend/DB & Auth: Supabase (serverless functions in `supabase/functions`)
 - APIs: Google Maps API, OpenAI API
 - Bundler: Vite (plugin: @vitejs/plugin-react-swc)
-- Linting/Formatting: ESLint, Prettier (project config files present)
-- Testing (optional/helpful): Vitest (if added)
+- 
 
 ---
 
@@ -101,12 +100,6 @@ NODE_ENV=development
 ```
 
 
----
-
-## API Keys & Security
-
-- Store API keys in environment variables — never commit them.
-- Use server-side endpoints (Supabase functions or an API server) to keep sensitive keys hidden from the client.
 
 ---
 
