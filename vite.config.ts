@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => ({
     sourcemap: true,
 
     // ✅ ADD THIS LINE (FIXES WARNING)
-    chunkSizeWarningLimit: 1000, // 1 MB
+    chunkSizeWarningLimit: 3000, // 1 MB
 
     rollupOptions: {
       output: {
