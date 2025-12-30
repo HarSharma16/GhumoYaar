@@ -12,6 +12,16 @@ This repository contains the frontend (Vite + React + TypeScript + Tailwind) and
 
 ---
 
+## Adding Showcase Images
+
+![Homepage screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065500.png?raw=true)
+![Itinerary screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065530.png?raw=true)
+
+
+
+
+---
+
 ## Key Features
 
 - AI-powered itinerary generation
@@ -103,15 +113,7 @@ NODE_ENV=development
 
 ---
 
-## Adding Showcase Images
 
-![Homepage screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065500.png?raw=true)
-![Itinerary screenshot](https://github.com/HarSharma16/GhumoYaar/blob/main/Screenshot%202025-12-29%20065530.png?raw=true)
-
-
-
-
----
 
 ## 📜 License & Attribution
 
